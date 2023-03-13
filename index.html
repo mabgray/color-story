@@ -24,10 +24,11 @@
 
 <body>
   <input type="text" placeholder="add your color here..." id="myInput1">
-    <button type="button" onclick="getInputValue1();">change color</button>
+    <button type="button" onclick="getInputValue('myInput1', '#color1')">change color</button>
 
     <input type="text" placeholder="add your color here..." id="myInput2">
-    <button type="button" onclick="getInputValue2();">change color</button>
+    <button type="button" onclick="getInputValue('myInput2', '#color2');">change color</button><br>
+    <button type="button" onclick="addADot()">add another color dot</button>
     
 <div class="container">
  <div class="colorBlock" id="color1">
