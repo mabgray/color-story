@@ -23,26 +23,34 @@
 </head>
 
 <body>
-  <input type="text" placeholder="add your color here..." id="myInput1">
-    <button type="button" onclick="getInputValue('myInput1', '#color1')">change color</button>
 
-    <input type="text" placeholder="add your color here..." id="myInput2">
-    <button type="button" onclick="getInputValue('myInput2', '#color2');">change color</button><br>
-    <button type="button" onclick="addADot()">add another color dot</button>
-    
 <div class="container">
- <div class="colorBlock" id="color1">
-  <p>color 1</p>
- </div>
+  <input type="text" placeholder="enter color name here" id="myInput1">
+  <button type="button" onclick="getInputValue('myInput1', '#color1')">change color</button>
 
- <div  class="colorBlock" id="color2">
-  <p>color 2</p>
- </div>
+  <input type="text" placeholder="enter color name here" id="myInput2">
+  <button type="button" onclick="getInputValue('myInput2', '#color2');">change color</button>
 
-
- 
-
+  <input type="text" placeholder="enter color name here" id="myInput2">
+  <button type="button" onclick="getInputValue('myInput3', '#color3');">change color</button>
 </div>
+  <button type="button" onclick="addAColor()">add another color </button>
+
+  <div class="container">
+    <div class="colorBlock" id="color1">
+      <p>color 1</p>
+    </div>
+  </div>
+    <div class="colorBlock" id="color2">
+      <p>color 2</p>
+    </div>
+    <div class="colorBlock" id="color3">
+      <p>color 3</p>
+    </div>
+  </div>
+
+  <button type="button" id="clear" onclick="clearColors">Clear</button>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
@@ -53,7 +61,7 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-  
+
 </body>
 
 </html>

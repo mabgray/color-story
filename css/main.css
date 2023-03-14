@@ -92,7 +92,7 @@ textarea {
 
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
 
 
@@ -100,11 +100,20 @@ textarea {
 
 }
 
+.container-1 {
+  flex-direction: column;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  
+}
+
 .colorBlock {
   border: 2px solid pink;
  
-width: 25%;
-  border-radius: 50%;
+width: 15%%;
+  
 }
 /* ==========================================================================
    Helper classes

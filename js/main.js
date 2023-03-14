@@ -18,14 +18,14 @@ function getInputValue(inputElement, querySelect){
    
 }  
 
-function addADot(){
-var newDot = document.createElement("div");
+function addABlock(){
+var newColor = document.createElement("div");
    
-    newDot.classList.add("colorBlock");
-    newDot.textContent = "color"
+    newColor.classList.add("colorBlock");
+    newColor.textContent = "color";
 
- var dotPosition = document.querySelector(".container");
- dotPosition.appendChild(newDot);
+ var colorPosition = document.querySelector(".container");
+ colorPosition.appendChild(newColor);
 
 
  //this adds the field to enter a color
