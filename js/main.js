@@ -18,11 +18,18 @@ function getInputValue(inputElement, querySelect){
    
 }  
 
+let boxes = 3;
+
 function addABlock(){
+    boxes++;
+  let fieldId = "myInput" + boxes;
+  let boxId = "color" + boxes;
+  
 var newColor = document.createElement("div");
    
     newColor.classList.add("colorBlock");
     newColor.textContent = "color";
+    newColor.id = boxId;
 
  var colorPosition = document.querySelector(".container");
  colorPosition.appendChild(newColor);
@@ -30,12 +37,15 @@ var newColor = document.createElement("div");
 
  //this adds the field to enter a color
 
-
+ 
  var newColorField = document. createElement("input"); 
  newColorField. setAttribute('type', 'text'); 
- newColorField. setAttribute('onclick', 'getInputValue()'); 
+ newColorField. setAttribute('onclick', `getInputValue("${fieldId}","#${boxId}")`); 
  newColorField. setAttribute('placeholder', 'enter a color name'); 
+newColorField.id = fieldId;
  var newButton = document.createElement("button");
+ newButton.setAttribute("textContent", "change color");
+ 
 
  //Then you can use appendChild to append the created element to the desired parent element.
  var fieldPosition = document.querySelector(".container");

@@ -24,7 +24,7 @@
 
 <body>
 
-<div class="container">
+<div class="container-1">
   <input type="text" placeholder="enter color name here" id="myInput1">
   <button type="button" onclick="getInputValue('myInput1', '#color1')">change color</button>
 
@@ -33,14 +33,14 @@
 
   <input type="text" placeholder="enter color name here" id="myInput2">
   <button type="button" onclick="getInputValue('myInput3', '#color3');">change color</button>
-</div>
-  <button type="button" onclick="addAColor()">add another color </button>
+
+  <button type="button" onclick="addABlock()">add another color </button>
 
   <div class="container">
     <div class="colorBlock" id="color1">
       <p>color 1</p>
     </div>
-  </div>
+
     <div class="colorBlock" id="color2">
       <p>color 2</p>
     </div>
@@ -48,8 +48,10 @@
       <p>color 3</p>
     </div>
   </div>
-
   <button type="button" id="clear" onclick="clearColors">Clear</button>
+</div>
+
+ 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
